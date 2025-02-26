@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="colors.css">
+</head>
+<body>
+    
+<div class="nav-wrapper">
+    <div class="nav">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/NEUL.png" alt="Logo" style="width: 120px; height: auto;">
+            </a>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contentPage.html">Resources</a>
+                <ul class="hover-links" >
+                    <li><a href="contentPage.html">library</a></li>
+                    <li><a href="404.html">Courses</a></li>
+                    <li><a href="404.html">E-books</a></li>
+                    <li><a href="404.html">Tutors</a></li>
+                </ul>
+            </li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="menu-icon" onclick="openMenutoggle()">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+    <div class="hero-section"> 
+        <div class="winner-banner">
+            <i class="fa-solid fa-trophy"></i>
+            <span>No. 1 E-Library Platform</span>
+        </div>        
+        <h1>NUEL - First Non-Profit E-library</h1>
+        <div class="search-container">
+            <input type="text" class="search-box" placeholder="Search...">
+            <button class="search-button">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+    <div class="close-menu">
+        <i class="fa fa-times" id="close-menu-icon" onclick="closeMenutoggle()"></i>
+    </div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contentPage.html" >Resources</a></li>
+        <li><a href="About.html" class="active">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</div>
+<div class="sponsor-slider">
+    <div class="sponsor-container">
+        <img src="images/sponsors-03.png" alt="Sponsor 1">
+        <img src="/images/sponsors-02.png" alt="Sponsor 2">
+        <img src="images/sponsors-01.png" alt="Sponsor 3">
+        <img src="images/sponsors-03.png" alt="Sponsor 1">
+        <img src="/images/sponsors-02.png" alt="Sponsor 2">
+        <img src="images/sponsors-01.png" alt="Sponsor 3">
+        <img src="images/sponsors-03.png" alt="Sponsor 1">
+        <img src="/images/sponsors-02.png" alt="Sponsor 2">
+        <img src="images/sponsors-01.png" alt="Sponsor 3">
+        <img src="images/sponsors-03.png" alt="Sponsor 1">
+        <img src="/images/sponsors-02.png" alt="Sponsor 2">
+        <img src="images/sponsors-01.png" alt="Sponsor 3">
+    </div>
+</div>
+<section class="services-section">
+    <h1>Services</h1>
+    <div class="services">
+        <div class="box">
+            <i class="fa-solid fa-book"></i>
+            <h2>E-Books</h2>
+            <p>Explore a vast collection of Somali e-books, covering diverse subjects, university textbooks, and exclusive private curriculums all in one place.</p>
+        </div>
+        <div class="box">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h2>Courses</h2>
+            <p>Gain access to thousands of Somali university and skill-based courses, carefully categorized for students, educators, and self-learners.</p>
+        </div>
+        <div class="box">
+            <i class="fa-solid fa-university"></i>
+            <h2>Library</h2>
+            <p>Tap into a rich digital library featuring Somali university resources, research papers, and private academic materials to support your studies.</p>
+        </div>
+        <div class="box">
+            <i class="fa-solid fa-newspaper"></i>
+            <h2>Blogs</h2>
+            <p>Stay informed with insightful articles, academic discussions, and curated newsletters focused on Somali education and knowledge-sharing.</p>
+        </div>
+    </div>    
+</section>
+<section class="content">
+    <h1>Latest Content</h1>
+    <div class="posts">
+        <div class="post">
+            <div class="post-img">
+                <img src="images/webdesign.png" alt="content image">
+            </div>
+            <h2>Web Design Chapter 1</h2>
+            <p>Uploaded : 24/2/2025</p>
+            <p>Tutor : Abdirahman Dollar</p>
+            <hr>
+            <div class="activity-buttons">
+                <div class="download-link">
+                    <a href="Source/Web Design Chapter 1.pptx" download="Web Design Chapter 1.pptx">Download</a>
+                </div>
+                <div class="read-in-here">
+                    <a href="contentPage.html">Read in here</a>
+                </div>
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-img">
+                <img src="images/webdesign.png" alt="content image">
+            </div>
+            <h2>Web Design Chapter 2</h2>
+            <p>Uploaded : 24/2/2025</p>
+            <p>Tutor : Abdirahman Dollar</p>
+            <hr>
+            <div class="activity-buttons">
+                <div class="download-link">
+                    <a href="Source/Web Design Chapter 2.pptx" download="Web Design Chapter 2.pptx">Download</a>
+                </div>
+                <div class="read-in-here">
+                    <a href="contentPage.html">Read in here</a>
+                </div>
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-img">
+                <img src="images/webdesign.png" alt="content image">
+            </div>
+            <h2>Web Design Chapter 3</h2>
+            <p>Uploaded : 24/2/2025</p>
+            <p>Tutor : Abdirahman Dollar</p>
+            <hr>
+            <div class="activity-buttons">
+                <div class="download-link">
+                    <a href="Source/Web Design Chapter 3.pptx" download="Web Design Chapter 3.pptx">Download</a>
+                </div>
+                <div class="read-in-here">
+                    <a href="contentPage.html">Read in here</a>
+                </div>
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-img">
+                <img src="images/webdesign.png" alt="content image">
+            </div>
+            <h2>Web Design Chapter 4</h2>
+            <p>Uploaded : 24/2/2025</p>
+            <p>Tutor : Abdirahman Dollar</p>
+            <hr>
+            <div class="activity-buttons">
+                <div class="download-link">
+                    <a href="Source/Web Design Chapter 4.pptx" download="Web Design Chapter 4.pptx">Download</a>
+                </div>
+                <div class="read-in-here">
+                    <a href="contentPage.html">Read in here</a>
+                </div>
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-img">
+                <img src="images/asm.png" alt="content image">
+            </div>
+            <h2>Assembly Language Chapter 1</h2>
+            <p>Uploaded : 24/2/2025</p>
+            <p>Tutor : Hassan Jabra</p>
+            <hr>
+            <div class="activity-buttons">
+                <div class="download-link">
+                    <a href="Source/Assembly languages chapter 1.pptx" download="Assembly Language Chapter 1.pptx">Download</a>
+                </div>
+                <div class="read-in-here">
+                    <a href="contentPage.html">Read in here</a>
+                </div>
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-img">
+                <img src="images/asm.png" alt="content image">
+            </div>
+            <h2>Assembly Language Chapter 2</h2>
+            <p>Uploaded : 24/2/2025</p>
+            <p>Tutor : Hassan Jabra</p>
+            <hr>
+            <div class="activity-buttons">
+                <div class="download-link">
+                    <a href="Source/Assembly languages chapter 2.pptx" download="Assembly Language Chapter 2.pptx">Download</a>
+                </div>
+                <div class="read-in-here">
+                    <a href="contentPage.html">Read in here</a>
+                </div>
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-img">
+                <img src="images/asm.png" alt="content image">    
+            </div>
+            <h2>Assembly Language Chapter 3</h2>
+            <p>Uploaded : 24/2/2025</p>
+            <p>Tutor : Hassan Jabra</p>
+            <hr>
+            <div class="activity-buttons">
+                <div class="download-link">
+                    <a href="Source/Assembly languages chapter 3.pptx" download="Assembly Language Chapter 3.pptx">Download</a>
+                </div>
+                <div class="read-in-here">
+                    <a href="contentPage.html">Read in here</a>
+                </div>
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-img">
+                <img src="images/ccnp.webp" alt="content image">
+            </div>
+            <h2>CCNP Chapter 1</h2>
+            <p>Uploaded : 24/2/2025</p>
+            <p>Tutor : Eng Mahdi</p>
+            <hr>
+            <div class="activity-buttons">
+                <div class="download-link">
+                    <a href="Source/CCNP chapter 1.pptx" download="CCNP Chapter 1.pptx">Download</a>
+                </div>
+                <div class="read-in-here">
+                    <a href="contentPage.html">Read in here</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="seemore">
+        <a href="contentPage.html">See More</a>
+    </div>
+</section>
+<footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>NUEL</h3>
+            <p>NUEL is a non-profit e-library platform that provides access to a wide range of Somali e-books, courses, and resources.</p>
+        </div>
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>  
+                <li><a href="contentPage.html">Resources</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-media">
+                <a href="404.HTML"><i class="fab fa-facebook" target="_blank"></i></a>
+                <a href="https://x.com/Nuellibrary" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="404.HTML"><i class="fab fa-instagram" target="_blank"></i></a>
+            </div>
+        </div>
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>Email: nuelibrary@gmail.com</p>
+            <p>Phone: +252 63 6950500</p>
+            <p>Address: Borama, Somaliland</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 NUEL. All rights reserved.</p>
+    </div>
+</footer>
+<script src="script.js"></script>
+<script src="search.js"></script>
+
+</body>
+</html> 

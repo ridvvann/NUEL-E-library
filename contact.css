@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+.hero {
+    position: relative;
+    height: 80vh;
+    background:url(images/background.png) no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+.hero h1 {
+    margin-top: 150px;
+    width: 100%;
+    max-width: 450px; /* Default for larger screens */
+}
+
+/* Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    .hero h1 {
+        max-width: 350px; /* Smaller size on tablets */
+    }
+}
+
+/* Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+    .hero h1 {
+        max-width: 300px; /* Even smaller size for mobile screens */
+    }
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0px 30px;
+    margin: 15px;
+    position: absolute;
+    top: 0;
+    width: 90%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 12px;
+}
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 5px;
+}
+.nav ul li {
+    display: inline;
+}
+
+.nav ul li a {
+    display: block; /* Makes the anchor tag a block element */
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    width: 100px;
+    height: 45px;
+    line-height: 45px; 
+    text-align: center; 
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.nav ul li a:hover {
+    background-color: rgb(0, 0, 0); 
+    color: rgb(255, 255, 255);
+}
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .search-container {
+        max-width: 350px; /* Smaller size on tablets */
+    }
+
+    .search-button {
+        width: 35%; /* Adjust button size */
+    }
+}
+
+@media (max-width: 480px) {
+    .search-container {
+        max-width: 300px; /* Smaller size on mobile */
+    }
+
+    .search-box {
+        font-size: 16px; /* Prevents zoom on iPhone */
+    }
+
+    .search-button {
+        width: 40%; /* Adjust button width */
+        font-size: 12px; /* Smaller font size */
+    }
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 60%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: right 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    border-radius: 20px 0px 0px 20px;
+    z-index: 1000; /* Ensure menu is above other content */
+}
+
+.mobile-menu.show {
+    right: 0; /* Slides in the menu */
+}
+
+.close-menu {
+    cursor: pointer;
+    font-size: 24px; /* Size of the close icon */
+    position: absolute;
+    right: 14%;
+    top: 5%;
+    background-color: white;
+    color: black;
+    width: 30px;
+    height: 30px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 80%; /* Full width for links */
+    position: absolute;
+    top: 90px;
+}
+
+.mobile-menu ul li {
+    width: 100%; /* Full width for each item */
+}
+
+.mobile-menu ul li a {
+    display: block;
+    padding: 15px; /* Spacing for links */
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.mobile-menu ul li a:hover {
+    background-color: white; 
+    color: black; /* Change text color on hover */
+    border-radius: 10px;
+}
+.mobile-menu hr {
+    width: 80%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+@media (max-width: 768px) {
+    .nav ul {
+        display: none;
+    }
+    .menu-icon {
+        display: block;
+    }
+}
+.for-centering {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+.info-card {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    border-radius: 9px;
+    padding: 10px;
+    gap: 30px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (min-width: 769px) {
+    .info-card {
+        width: auto;
+        font-size: 0.9rem;
+        gap: 20px;
+    }
+}
+@media (max-width: 768px) {
+    .info-card {
+        width: auto;
+        font-size: 0.9rem;
+        gap: 20px;
+    }
+    .contact-info {
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+.info-card img {
+    border-radius: 9px;
+}
+.contact-info {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contact-info h1 {
+    font-weight: 300;
+}
+.social-links a {
+    text-decoration: none;
+    font-size: 28px;
+    color: #333;
+}
+
+.social-links a:hover {
+    color: tomato;
+}

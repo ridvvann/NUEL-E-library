@@ -1,0 +1,9 @@
+:root {
+    --dark-blue: #090935; /* Base dark blue */
+    --blue-light: #6e70cf; /* Lighter shade of dark blue */
+    --blue-lighter: #3a3ea7; /* Even lighter shade of blue */
+    --blue-dark: #19193f; /* Darker shade of blue */
+    --soft-white: rgba(255, 255, 255, 0.2); /* Soft white for highlights */
+    --soft-black: rgba(0, 0, 0, 0.4); /* Soft black for shadows */
+}
+
